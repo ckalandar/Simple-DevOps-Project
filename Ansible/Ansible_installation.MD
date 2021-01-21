@@ -31,6 +31,7 @@ Ansible is an open-source automation platform. It is very, very simple to set up
    ```
  Enable remote ssh login -- edit /etc/ssh/sshd_config
  PasswordAuthentication yes
+ service sshd reload
  
 1. Log in as a ansadmin user on master and generate ssh key (on Control node)
    ```sh 
