@@ -29,7 +29,9 @@ Ansible is an open-source automation platform. It is very, very simple to set up
    ```sh
    echo "ansadmin ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
    ```
-   
+ Enable remote ssh login -- edit /etc/ssh/sshd_config
+ PasswordAuthentication yes
+ 
 1. Log in as a ansadmin user on master and generate ssh key (on Control node)
    ```sh 
    sudo su - ansadmin
